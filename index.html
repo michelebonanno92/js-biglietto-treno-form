@@ -18,33 +18,60 @@
                 CALCOLA IL PREZZO DEL TUO BIGLIETTO
             </h1>
             <h2 id="benvenuto">
-                Benvenuto 
+                Benvenuto/a 
             </h2>
-            <div class="contInput">
-                <div>
-                    <div>
-                         Inserisci i km da fare
-                     </div> 
-                    <label for="km"></label>
-                    <input type="text" id="km" name="km" placeholder="Inserisci i km da fare...">
-               </div>
-               <div>
-                     <div>
-                        Inserisci la tua età 
-                     </div>
-                    <label for="age"></label>
-                    <input type="number" id="age" name="age" placeholder="Inserisci la tua età...">
-                </div>
-            </div>
-            <div>
-                <button id="submitButton">
-                    Calcola Prezzo Biglietto 
-                </button>
-            </div>
-           
 
-        
-        </div>
+            <form action="">
+
+                <div class="contInput">
+                    <div>
+                        <h3>
+                            Inserisci i km da fare
+                        </h3> 
+                        <label for="km">
+                        </label>
+                        <input 
+                            type="number" 
+                            id="km" 
+                            name="km"
+                            placeholder="Inserisci i km da fare..."
+                            min="0"
+                            required>
+                   </div>
+                   <div>
+                        <h3>
+                            Inserisci la tua età 
+                        </h3>
+                        <label for="age">
+                        </label>
+                        <input 
+                            type="number" 
+                            id="age" 
+                            name="age" 
+                            placeholder="Inserisci la tua età..."
+                            min="0"
+                            max="150"
+                            required>
+                    </div>
+                </div>
+                <div>
+                    <button id="submitButton" type="submit">
+                        Calcola Prezzo Biglietto 
+                    </button>
+                </div>
+            
+            </div>
+
+
+
+
+
+
+
+
+
+            </form>
+            
 
         <script type="text/javascript" src="js/script.js"></script>
     </body>

@@ -36,18 +36,21 @@
 //     alert('[PREZZO SENZA SCONTO] Il prezzo del biglietto è €' + prezzoBiglietto.toFixed(2)) ;
 // } 
 
-alert("CIAO :) !!! SONO JAVASCRIPT E SONO  PRONTO A SERVIRTI ... ")
+alert("CIAO, SIAMO LE FERROVIE DELLO STATO E SIAMO  FELICI  DI SERVIRTI ... ")
 
 const nomeGiocatore = prompt(" Inserisci qui il tuo nome grazie !!!")
-document.getElementById("benvenuto").innerHTML = " Benvenuto " + nomeGiocatore ;
+document.getElementById("benvenuto").innerHTML = " Benvenuto/a " + nomeGiocatore ;
 
-const submitButton = document.getElementById('submitButton');
+
 
 // const age = parseInt() ;
-
-submitButton.addEventListener('click' , function(){  // Definiziokne di funzione anonima che verrà eseguita solo quando si verificherà 
+const InfoForm = document.querySelector('form');
+InfoForm .addEventListener('submit' , // 1° argomento : evento da ascoltare/intercettare 
+    function(pinco){  // 2° argomento : definiziokne di funzione anonima che verrà eseguita solo quando si verificherà 
         
         // Blocco di codice da eseguire quando si verifica l'evento selezionato
+
+        pinco.preventDefault()
 
         //  1 chiedo il numero di kilometri all'utente e lo salvo
         const km = document.getElementById('km');
@@ -72,7 +75,7 @@ submitButton.addEventListener('click' , function(){  // Definiziokne di funzione
         console.log("Il costo totale al km con lo sconto del 20% è " , prezzoBigliettoSconto ) ;
         alert('Grazie per averci scelto ,Il prezzo del biglietto è €' + prezzoBigliettoSconto.toFixed(2)) ;
         alert("COMPLIMENTI PER TE UNO SCONTO DEL 20% SOLO PER OGGI !!! ")
-        alert("ANCORA A PENSARCI, DAI DATTI UNA MOSSA !!! ")
+        alert("ANCORA A PENSARCI ??? DAI DATTI UNA MOSSA !!! ")
 
 
          } else if ( age.value>= 66 ) {
@@ -80,7 +83,7 @@ submitButton.addEventListener('click' , function(){  // Definiziokne di funzione
         console.log("Il costo totale al km con lo sconto del 40% è " , prezzoBigliettoSconto ) ;
         alert('Grazie per averci scelto ,Il prezzo del biglietto è €' + prezzoBigliettoSconto.toFixed(2)) ;
         alert("COMPLIMENTI PER TE UNO SCONTO DEL 40%  SOLO PER OGGI !!! ")
-        alert("ANCORA A PENSARCI, DAI DATTI UNA MOSSA !!! ")
+        alert("ANCORA A PENSARCI ??? DAI DATTI UNA MOSSA !!! ")
 
 
         }else {
