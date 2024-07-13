@@ -8,3 +8,52 @@ reset
     box-sizing: border-box;
  }
 
+ .myContainer{
+   max-width: 1000px;
+   margin: 0 auto ;
+   margin-top: 200px;
+ }
+
+ img{
+   width: 50%;
+ }
+
+ h1 , h2{
+   text-align: center;
+   font-size: 2.5rem;
+   margin-bottom: 50px;
+ }
+
+ h1{
+  color: #006C67 ;
+ }
+
+ h2{
+  color:#E31936 ;
+ }
+
+ h2::after{
+  content: "!!!";
+  margin-left: 15px;
+ }
+
+ .contImg{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 50px;
+ }
+
+ .contInput{
+  display: flex;
+  justify-content: space-around;
+ }
+
+ div input , div div {
+  text-align: center;
+  padding: 10px;
+ }
+
+ div button{
+  padding: 20px;
+ }
